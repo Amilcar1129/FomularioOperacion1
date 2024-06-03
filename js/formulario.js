@@ -15,7 +15,10 @@ function realizarOperacion(operacion) {
         case 'resta':
             resultado = numero1 - numero2;
             break;
-        
+        case 'multiplicacion':
+            resultado = numero1 * numero2;
+            break;
+       
     }
 
     document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
