@@ -12,6 +12,9 @@ function realizarOperacion(operacion) {
         case 'suma':
             resultado = numero1 + numero2;
             break;
+        case 'resta':
+            resultado = numero1 - numero2;
+            break;
         
     }
 
