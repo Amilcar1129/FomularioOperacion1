@@ -18,7 +18,13 @@ function realizarOperacion(operacion) {
         case 'multiplicacion':
             resultado = numero1 * numero2;
             break;
-       
+        case 'division':
+            if (numero2 === 0) {
+                alert("No se puede dividir por cero.");
+                return;
+            }
+            resultado = numero1 / numero2;
+            break;
     }
 
     document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
